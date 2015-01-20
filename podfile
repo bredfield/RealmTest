@@ -1,0 +1,9 @@
+platform :ios, "8.0"
+
+target :RealmTest do
+  pod 'Realm'
+end
+
+target :RealmTestTests do
+  pod 'Realm/Headers'
+end
