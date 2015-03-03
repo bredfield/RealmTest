@@ -16,7 +16,6 @@
 		B51F6BD31A6DB6A900B2DA53 /* RealmTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F6BD21A6DB6A900B2DA53 /* RealmTestCase.swift */; };
 		B51F6BDD1A6DB6EC00B2DA53 /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F6BDC1A6DB6EC00B2DA53 /* TestUser.swift */; };
 		B51F6BE31A6DB95500B2DA53 /* TestUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F6BE21A6DB95500B2DA53 /* TestUserTests.swift */; };
-		B529030A1A6DCB3E0046B7BA /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F6BDC1A6DB6EC00B2DA53 /* TestUser.swift */; };
 		CD8659FADB81383ECA95E23A /* libPods-RealmTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A86CF4969395D313B210462 /* libPods-RealmTest.a */; };
 /* End PBXBuildFile section */
 
@@ -332,7 +331,6 @@
 			files = (
 				B51F6BE31A6DB95500B2DA53 /* TestUserTests.swift in Sources */,
 				B51F6BD31A6DB6A900B2DA53 /* RealmTestCase.swift in Sources */,
-				B529030A1A6DCB3E0046B7BA /* TestUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

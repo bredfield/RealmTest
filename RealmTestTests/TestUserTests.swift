@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import RealmTest
 
 class TestUserTests: RealmTestCase {
 
@@ -28,7 +29,6 @@ class TestUserTests: RealmTestCase {
         
         let predicate = NSPredicate(format: "token = %@", token)
         let user = TestUser.objectsWithPredicate(predicate).firstObject() as? TestUser
-        //This sporadically passes/fails
         XCTAssert(user != nil, "User should exist")
     }
 }

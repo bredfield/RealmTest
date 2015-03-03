@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 bredfield. All rights reserved.
 //
 
-class TestUser: RLMObject {
+public class TestUser: RLMObject {
     dynamic var token = ""
     
     struct defaults {
         static let tokenKey = "userToken"
     }
     
-    override class func primaryKey() -> String {
+    public override class func primaryKey() -> String {
         return "token"
     }
     
@@ -29,7 +29,7 @@ class TestUser: RLMObject {
 
 //Creation & Deletion
 extension TestUser {
-    class func createUserWithToken(token: String)-> TestUser {
+    public class func createUserWithToken(token: String)-> TestUser {
         let user = TestUser(token)
         
         let realm = RLMRealm.defaultRealm()
@@ -49,7 +49,7 @@ extension TestUser {
         realm.commitWriteTransaction()
     }
     
-    class func currentUser(token: String) -> TestUser? {
+    public class func currentUser(token: String) -> TestUser? {
         let predicate = NSPredicate(format: "token = %@", token)
         return TestUser.objectsWithPredicate(predicate).firstObject() as? TestUser
     }
